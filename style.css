@@ -10,17 +10,83 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
 }
 
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
+}
 
-.content {
+.earth-img {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.hero {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+.hero-content {
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1170px;
+    padding-bottom: 50px;
+}
+
+.hero-body {
+    max-width: 800 px;
+}
+
+.header-content {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin: auto;
+}
+
+.information-content {
+    max-width: 1170px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: auto;
+    padding: 30px;
+}
+
+.information-body {
+    display: flex;
     justify-content: space-between;
+    gap: 50px;
+}
+
+.magritte-travel-one,
+.magritte-travel-two,
+.magritte-travel-three,
+.magritte-travel-four {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+
+button {
+    background-color: #3882F6;
+    border: 0;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
 }
 
 header,
@@ -29,15 +95,20 @@ footer {
     justify-content: space-between;
     background-color: #1F2937;
     color: white;
-    flex-grow: 1;
     padding: 10px;
     align-items: center;
+    width: 100%;
 }
 
 .header-logo {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 600;
+    flex-shrink: 0;
+}
+
+header {
+    padding-bottom: 50px;
 }
 
 footer {
@@ -54,4 +125,8 @@ ul {
     gap: 16px;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+li {
+    flex-shrink: 0;
 }
