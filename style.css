@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
+    background-color: #1F2937;
 }
 
 img, picture, video, canvas, svg {
@@ -28,7 +29,6 @@ img, picture, video, canvas, svg {
 }
 
 .hero {
-    background-color: #1F2937;
     color: #E5E7EB;
 }
 
@@ -59,26 +59,49 @@ img, picture, video, canvas, svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     margin: auto;
-    padding: 30px;
+    padding-top: 30px;
+    flex: 0 0 auto;
 }
 
 .information-body {
+    max-width: 1170px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
 }
 
-.magritte-travel-one,
-.magritte-travel-two,
-.magritte-travel-three,
-.magritte-travel-four {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
+.image-container {
+    display: flex;
+    flex-direction: column;
 }
 
+.image-text {
+    max-width: 250px;
+    text-align: center;
+    color:#1F2937;
+}
+
+
+.dalle-magritte-travel {
+    height: 100%;
+    width: 300px;
+    border: 0;
+    border-radius: 0;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    padding-bottom: 5px;
+}
+
+.information {
+    background-color: white;
+}
 
 button {
     background-color: #3882F6;
